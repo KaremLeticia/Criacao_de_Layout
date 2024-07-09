@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio_Criacao_de_Layout</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <img src="imagens/Foto ícone.jpg" alt="Ícone">
+            <p>Karem Santos</p>
+            <p>Sou estudante de TI e aqui está minha lista de tarefas.
+                .</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/karemsantos" target="_blank">Linkedin 🤝🏻</a></li>
+                <li><a href="https://github.com/KaremLeticia" target="_blank">Github 😺</a></li>
+                <li><a href="https://youtu.be/GfNkmN_nZHs?si=NAGVz4yNHn0LEDKy" target="_blank">Música do momento 🎵 </a></li>
+                <li><a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwLa40yo43YPQSTclMLMrML1ZISVUozVUoS8wtyCzKBwDDvQux&client=opera-gx&q=diarios+de+um+vampiro&sourceid=opera&ie=UTF-8&oe=UTF-8"> Série Favorita 📺</a></li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <h1>Lista de tarefas</h1>
+            <form id="form-tarefa">
+                <input type="text" id="nova-tarefa" placeholder="Nova tarefa" required>
+                <select id="periodo-tarefa" required>
+                    <option value="dia">Dia</option>
+                    <option value="noite">Noite</option>
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="tabela-tarefas">
+                <div>
+                    <h2>Dia</h2>
+                    <ol id="tarefas-dia">
+                        <li>Tarefa 1 <button class="remover">X</button></li>
+                        <li>Tarefa 2 <button class="remover">X</button></li>
+                        <li>Tarefa 3 <button class="remover">X</button></li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Noite</h2>
+                    <ol id="tarefas-noite">
+                        <li>Tarefa 1 <button class="remover">X</button></li>
+                        <li>Tarefa 2 <button class="remover">X</button></li>
+                        <li>Tarefa 3 <button class="remover">X</button></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
